@@ -14,7 +14,7 @@ function logCookies(cookies) {
   document.getElementById("text_imput").value = document.cookie;
 }
 
-console.log("test");
+console.log(submit_button);
 
 submit_button.addEventListner('click', function(event){
   document.getElementById("text_imput").value = "Can't click that!";
