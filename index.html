@@ -14,5 +14,12 @@
   <div id="mylog"></div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script src="/cookie_safe/js/main.js"></script>
+  <script>
+  if('serviceWorker' in navigator) {
+    navigator.serviceWorker
+             .register('/sw.js')
+             .then(function() { console.log("Service Worker Registered"); });
+  }
+  </script>
 </body>
 </html>
