@@ -10,11 +10,8 @@ window.onerror = function(message, url, linenumber) {
 }
 
 function logCookies(cookies) {
-  document.getElementById("text_imput").value = cookies;
+  document.getElementById("text_imput").value = document.cookie;
 }
-
-var gettingAll = cookies.getAll({});
-gettingAll.then(logCookies);
 
 console.log("test");
 
