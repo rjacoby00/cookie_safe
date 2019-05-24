@@ -1,4 +1,5 @@
 var former = console.log;
+submit_button = document.getElementById('submit');
 console.log = function(msg){
     former(msg);  //maintains existing logging via the console.
     $("#mylog").append("<div>" + msg + "</div>");
@@ -15,7 +16,7 @@ function logCookies(cookies) {
 
 console.log("test");
 
-document.getElementById('submit').addEventListner('click', function(event){
+submit_button.addEventListner('click', function(event){
   document.getElementById("text_imput").value = "Can't click that!";
   event.preventDefault();
 }, false);
