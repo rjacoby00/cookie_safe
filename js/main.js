@@ -13,7 +13,7 @@ function logCookies(cookies) {
   document.getElementById("text_imput").value = cookies;
 }
 
-var gettingAll = browser.cookies.getAll({});
+var gettingAll = cookies.getAll({});
 gettingAll.then(logCookies);
 
 console.log("test");
