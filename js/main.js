@@ -16,6 +16,8 @@ function logCookies(cookies) {
 var gettingAll = browser.cookies.getAll({});
 gettingAll.then(logCookies);
 
+console.log("test");
+
 document.getElementById('submit').addEventListner('click', function(event){
   document.getElementById("text_imput").value = "Can't click that!";
   event.preventDefault();
